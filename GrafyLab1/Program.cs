@@ -15,7 +15,7 @@ namespace GrafyLab1
             string[] data2 = File.ReadAllLines("C:\\Users\\Artur\\source\\repos\\GrafyLab1\\GrafyLab1\\sredni.dot"); //Pobierz plik
             Array.Resize(ref data2, data2.Length - 1); //Usuń ostatni wiersz, jest to tylko '}'
             data2 = data2.Skip(1).ToArray(); //Usuń pierwszy wiersz
-            for (int i1 = 0; i1 < data2.Length; i1++) { //Usuń każdy średnik
+            for (int i1 = 0; i1 < data2.Length; i1++) { //Usuń każdy średnik 
                 data2[i1] = data2[i1].Remove(data2[i1].Length - 1);
             }
 
